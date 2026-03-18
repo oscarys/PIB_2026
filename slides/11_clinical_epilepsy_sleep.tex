@@ -1,30 +1,27 @@
 % slides/11_clinical_epilepsy_sleep.tex
 
 
-\begin{frame}{Clinical Applications I: Epilepsy \& Sleep}
+\begin{frame}{Aplicaciones clínicas I: epilepsia y sueño}
   \begin{columns}[T]
     \begin{column}{0.50\textwidth}
-      \textbf{Epilepsy}
+      \textbf{Epilepsia}
       \begin{itemize}
-        \item \textbf{Automated seizure detection}: CNN/LSTM on raw iEEG
-          reaches $>$95\% sensitivity \cite{Subasi2005}
-        \item \textbf{Seizure prediction}: phase-space features, 30--60 min
-          pre-ictal window
-        \item \textbf{Spike detection}: template matching, iEEG atlas
-        \item HFOs (high-frequency oscillations) as epileptogenic zone markers
+        \item Detección automática de crisis: CNN/LSTM en iEEG
+          alcanza $>$95\% sensibilidad \cite{Subasi2005}
+        \item Predicción de crisis: rasgos en el espacio de fase, 30--60 min
+          ventana pre-ictal
+        \item Espigas: filtrado por templete
       \end{itemize}
     \end{column}
     \begin{column}{0.47\textwidth}
-      \textbf{Sleep staging}
+      \textbf{Análisis del sueño}
       \begin{itemize}
-        \item AASM rules (W/N1/N2/N3/REM) automatable at $\sim$85\% epoch accuracy
-        \item \textbf{U-Sleep}: universal model across PSG montages \cite{Perslev2021}
-        \item Spindle \& K-complex detection: matched filters + neural networks
-        \item HRV--EEG coupling for sleep quality metrics
+        \item Reglas de la AASM (W/N1/N2/N3/REM) automatizables con $\sim$85\% de precisión por época
+        \item U-Sleep: modelo universal para diferentes montajes polisomnográficos \cite{Perslev2021}
       \end{itemize}
       \vspace{0.3em}
-      \begin{block}{Key toolboxes}
-        \small EEGLAB, MNE-Python, FieldTrip, Brainstorm, YASA (sleep)
+      \begin{block}{Herramientas clave}
+        \small EEGLAB, MNE-Python, FieldTrip, Brainstorm
       \end{block}
     \end{column}
   \end{columns}

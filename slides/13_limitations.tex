@@ -1,38 +1,28 @@
 % slides/13_limitations.tex
 
-\begin{frame}{Limitations \& Open Problems}
+\begin{frame}{Problemas abiertos}
   \begin{columns}[T]
     \begin{column}{0.50\textwidth}
-      \textbf{Methodological challenges}
+      \textbf{Retos metodológicos}
       \begin{itemize}
-        \item \textbf{Spatial resolution}: scalp EEG limited to $\sim$5--10 cm;
-          MEG and iEEG superior
-        \item \textbf{Reference problem}: no truly neutral reference
-          exists \cite{Yao2001}
-        \item \textbf{Non-stationarity}: standard spectral assumptions
-          often violated
-        \item \textbf{Small samples}: most qEEG studies N $<$ 50;
-          risk of inflated effect sizes
-        \item \textbf{Reproducibility}: preprocessing choices create a
-          "garden of forking paths"
+        \item Resolución espacial
+        \item No hay una referencia neutra real
+        \item Los supuestos de estacionaridad regularmente no se cumplen
+        \item Muestras pequeñas
       \end{itemize}
     \end{column}
     \begin{column}{0.47\textwidth}
-      \textbf{Deep learning--specific issues}
+      \textbf{En el aprendizaje maquinal}
       \begin{itemize}
-        \item \textbf{Interpretability}: limited mechanistic insight
-          from black-box models
-        \item \textbf{Cross-subject generalisation}: large inter-individual
-          variability
-        \item \textbf{Cross-device transfer}: amplifier, electrode type,
-          sampling rate differ across labs
-        \item \textbf{Data scarcity}: clinical EEG rarely public (privacy)
+        \item Interpretabilidad
+        \item Generalización: gran variabilidad inter-sujeto
+        \item Transferencia: diferentes setups por laboratorio
+        \item Nuestras pequeñas (¿privacidad?)
       \end{itemize}
       \vspace{0.3em}
-      \begin{alertblock}{Replication crisis}
-        \small Several qEEG biomarkers ($\theta/\beta$ ratio, $\alpha$ asymmetry)
-        have failed independent replication at scale.
-      \end{alertblock}
+      \begin{block}{Reproducibilidad}
+        \small Variosl biomarcadores basados en qEEG (razón $\theta/\beta$, asimetría $\alpha$, BIS) han fallado pruebas de reproducibilidad a gran escala.
+      \end{block}
     \end{column}
   \end{columns}
 \end{frame}
