@@ -1,0 +1,33 @@
+% slides/07_connectivity.tex
+
+
+\begin{frame}{Functional \& Effective Connectivity}
+  \begin{columns}[T]
+    \begin{column}{0.50\textwidth}
+      \textbf{Undirected (functional) measures}
+      \begin{itemize}
+        \item \textbf{Coherence}: spectral correlation — volume-conduction sensitive
+        \item \textbf{PLV} (phase-locking value): phase synchrony, ignores
+          amplitude \cite{LeVanQuyen2001}
+        \item \textbf{PLI / wPLI}: imaginary component only $\Rightarrow$ robust
+          to zero-lag artefacts \cite{Vinck2011}
+        \item \textbf{AEC} (amplitude envelope correlation): slow fluctuations
+          in broadband power
+      \end{itemize}
+    \end{column}
+    \begin{column}{0.47\textwidth}
+      \textbf{Directed (effective) measures}
+      \begin{itemize}
+        \item \textbf{Granger causality} / MVAR models \cite{Granger1969}
+        \item \textbf{DTF / PDC}: partial directed coherence in frequency domain
+        \item \textbf{Transfer entropy}: model-free, information-theoretic
+        \item \textbf{DCM}: Bayesian, mechanistic \cite{Friston2003}
+      \end{itemize}
+      \vspace{0.3em}
+      \begin{alertblock}{Phase--amplitude coupling (PAC)}
+        \small Coupling between $\theta$ phase and $\gamma$ amplitude
+        tracks working memory load \cite{Canolty2006}.
+      \end{alertblock}
+    \end{column}
+  \end{columns}
+\end{frame}

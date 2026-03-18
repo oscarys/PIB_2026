@@ -1,0 +1,31 @@
+% slides/11_clinical_epilepsy_sleep.tex
+
+
+\begin{frame}{Clinical Applications I: Epilepsy \& Sleep}
+  \begin{columns}[T]
+    \begin{column}{0.50\textwidth}
+      \textbf{Epilepsy}
+      \begin{itemize}
+        \item \textbf{Automated seizure detection}: CNN/LSTM on raw iEEG
+          reaches $>$95\% sensitivity \cite{Subasi2005}
+        \item \textbf{Seizure prediction}: phase-space features, 30--60 min
+          pre-ictal window
+        \item \textbf{Spike detection}: template matching, iEEG atlas
+        \item HFOs (high-frequency oscillations) as epileptogenic zone markers
+      \end{itemize}
+    \end{column}
+    \begin{column}{0.47\textwidth}
+      \textbf{Sleep staging}
+      \begin{itemize}
+        \item AASM rules (W/N1/N2/N3/REM) automatable at $\sim$85\% epoch accuracy
+        \item \textbf{U-Sleep}: universal model across PSG montages \cite{Perslev2021}
+        \item Spindle \& K-complex detection: matched filters + neural networks
+        \item HRV--EEG coupling for sleep quality metrics
+      \end{itemize}
+      \vspace{0.3em}
+      \begin{block}{Key toolboxes}
+        \small EEGLAB, MNE-Python, FieldTrip, Brainstorm, YASA (sleep)
+      \end{block}
+    \end{column}
+  \end{columns}
+\end{frame}

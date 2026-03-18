@@ -1,0 +1,38 @@
+% slides/13_limitations.tex
+
+\begin{frame}{Limitations \& Open Problems}
+  \begin{columns}[T]
+    \begin{column}{0.50\textwidth}
+      \textbf{Methodological challenges}
+      \begin{itemize}
+        \item \textbf{Spatial resolution}: scalp EEG limited to $\sim$5--10 cm;
+          MEG and iEEG superior
+        \item \textbf{Reference problem}: no truly neutral reference
+          exists \cite{Yao2001}
+        \item \textbf{Non-stationarity}: standard spectral assumptions
+          often violated
+        \item \textbf{Small samples}: most qEEG studies N $<$ 50;
+          risk of inflated effect sizes
+        \item \textbf{Reproducibility}: preprocessing choices create a
+          "garden of forking paths"
+      \end{itemize}
+    \end{column}
+    \begin{column}{0.47\textwidth}
+      \textbf{Deep learning--specific issues}
+      \begin{itemize}
+        \item \textbf{Interpretability}: limited mechanistic insight
+          from black-box models
+        \item \textbf{Cross-subject generalisation}: large inter-individual
+          variability
+        \item \textbf{Cross-device transfer}: amplifier, electrode type,
+          sampling rate differ across labs
+        \item \textbf{Data scarcity}: clinical EEG rarely public (privacy)
+      \end{itemize}
+      \vspace{0.3em}
+      \begin{alertblock}{Replication crisis}
+        \small Several qEEG biomarkers ($\theta/\beta$ ratio, $\alpha$ asymmetry)
+        have failed independent replication at scale.
+      \end{alertblock}
+    \end{column}
+  \end{columns}
+\end{frame}

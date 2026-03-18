@@ -1,0 +1,108 @@
+\documentclass[aspectratio=169, 10pt]{beamer}
+\input{shared/preamble}
+
+\title[qEEG]{Algunas exploraciones \\ en electorencefalografía cuantitativa}
+\subtitle{De señal a biomarcador}
+\author[OYS]{Oscar Yáñez Suárez\\\small oyanez@izt.uam.mx}
+\institute[UAMI]{Ingeniería Eléctrica / UAM Iztapalapa}
+\date{\today}
+ \logo{\includegraphics[height=0.8cm]{shared/lini_logo_original_small}} 
+
+\begin{document}
+	
+	\input{slides/00_title}
+	\input{slides/01_outline}
+	\section{Motivación y Contexto}
+	\subsection{qEEG}
+	\input{slides/002_eeg_scroll}
+	\input{slides/02_motivation}
+	\subsection{EEG 101}
+	\input{slides/03_eeg_primer}
+	\input{slides/03a_eeg_primer}
+	\input{slides/04_history}
+	\input{slides/04a_history}
+	\input{slides/05_preprocessing}
+	\input{slides/05a_preprocessing}
+	\section{Análisis del EEG}
+	\subsection{Espectral}
+	\input{slides/06_spectral}
+	\subsection{Conectividad funcional}
+	\input{slides/07_connectivity}
+	\subsection{Tomografía eléctrica}
+	\input{slides/08_source}
+	\subsection{Interfaz cerebro computadora}
+	\input{slides/09_ml}
+	\input{slides/10_microstates}
+	\section{Aplicaciones clínicas}
+	\input{slides/11_clinical_epilepsy_sleep}
+	\input{slides/12_clinical_psychiatry}
+	\section{Limitaciones y perspectivas}
+	\input{slides/13_limitations}
+	\input{slides/14_conclusions}
+	\input{slides/15_references}
+	\input{slides/16_goodbye}
+	
+\end{document}
+
+
+
+%\documentclass{beamer}
+%\mode<presentation>
+%{
+%  \usetheme{Warsaw}
+%  %\usetheme[compress]{Dresden}
+%  \setbeamercovered{invisible}
+%}
+%
+%\usepackage{amsmath,amssymb,array}
+%\usepackage[spanish]{babel}
+%\usepackage{fontspec}
+%%\usepackage[utf8x]{inputenc}
+%\usepackage{pgf,graphicx,overpic,subfigure}
+%
+%\usepackage{pdfpc-commands}
+%
+%\title[qEEG-Conectividad]{Algunas exploraciones \\ en electorencefalografía cuantitativa\\ {\small Seminario del Posgrado de Ingeniería Biomédica, 26-I}}
+%\author[Seminario PIB]{Laboratorio de Neuroimagenología - LINI}
+%\institute[]{ Oscar Yáñez Suárez \\ Laboratorio de Neuroimagenología \\ UAM Iztapalapa \\ \texttt{oyanez@izt.uam.mx}}
+%\date[]{}
+%\subject{}
+%
+%\pgfdeclareimage[height=0.6in]{logo}{imagenes/inr-lini}
+%\usecolortheme[rgb={0.0,0.4,0.2}]{structure} % Colores UAMI
+%\definecolor{vuami}{rgb}{0.0,0.4,0.2}
+%
+%\begin{document}
+%	
+%	\include{portada}
+%	\include{contenido}
+%	\section{Introducción}
+%		\subsection{Electrodiagnóstico y qEEG}
+%		\include{colaboracion_inr_uam}
+%		\include{eeg_scroll}
+%		\include{graficas_inr_uami}
+%	\section{Teoría de gráficas}
+%		\subsection{Definiciones}
+%		\include{tdg_definiciones}
+%		\subsection{Ejemplos}
+%		\include{grafica_republica_mexicana}
+%		\include{grafica_1020}
+%		\include{ejemplo_tdg_klimesch}
+%		\subsection{Propiedades}
+%		\include{tdg_medidas_nodo}
+%		\include{tdg_medidas_grafica_no_pesada}
+%	\section{Conectividad funcional}
+%		\subsection{Medidas de conectividad}
+%		\include{medidas_conectividad}
+%		\subsection{Coherencia espectral}
+%		\include{coherencia_espectral}
+%		\include{graficas_de_conectividad_no_direcccional}
+%		\include{graficas_de_conectividad_direcccional}
+%		\subsection{Cuantificación de la conectividad}
+%		\include{cuantificacion_redes_umbralizacion}
+%		\include{cuantificacion_redes_promedio_coherencia}
+%		\include{cuantificacion_redes_curso_temporal}
+%	\section{Conclusiones}
+%		\include{conclusiones}	
+%		
+%\end{document}

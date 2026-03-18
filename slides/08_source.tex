@@ -1,0 +1,36 @@
+% slides/08_source.tex
+
+
+\begin{frame}{Solving the EEG Inverse Problem}
+  \begin{columns}[T]
+    \begin{column}{0.50\textwidth}
+      \textbf{The inverse problem is ill-posed}
+      \begin{itemize}
+        \item Infinitely many source configurations can produce the same scalp topography
+        \item Regularisation and anatomical priors are essential
+      \end{itemize}
+      \vspace{0.4em}
+      \textbf{LORETA family} \cite{PascualMarqui1994}
+      \begin{itemize}
+        \item \textbf{LORETA}: Laplacian smoothness prior
+        \item \textbf{sLORETA}: zero localisation error for single dipoles
+        \item \textbf{eLORETA}: exact, standardised; gold standard for resting-state
+      \end{itemize}
+    \end{column}
+    \begin{column}{0.47\textwidth}
+      \textbf{Beamforming}
+      \begin{itemize}
+        \item \textbf{LCMV}: scalar/vector; optimal for ERPs
+        \item \textbf{DICS}: frequency-domain; ideal for oscillatory sources \cite{Gross2001}
+        \item Requires accurate covariance — sensitive to artifact residuals
+      \end{itemize}
+      \vspace{0.3em}
+      \textbf{MRI-constrained methods}
+      \begin{itemize}
+        \item Individual head models (BEM, FEM)
+        \item Cortical surface constraint (FreeSurfer parcellations)
+        \item Combined EEG-fMRI asymptotic approaches
+      \end{itemize}
+    \end{column}
+  \end{columns}
+\end{frame}

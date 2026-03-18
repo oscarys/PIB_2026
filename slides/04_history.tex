@@ -1,0 +1,32 @@
+% slides/04_history.tex
+\begin{frame}{Línea del tiempo de la qEEG}
+  \begin{center}
+  \begin{tikzpicture}[
+      node distance = 0.55cm and 0.1cm,
+      every node/.style = {font=\small},
+      milestone/.style = {draw=verdeuami, fill=eeglight, rounded corners=3pt,
+                          text width=2.5cm, align=center, inner sep=4pt},
+      arr/.style = {-Stealth, thick, color=verdeuami}
+    ]
+    \node[milestone] (berger) {1929\\Berger\\Primer EEG};
+    \node[milestone, right=of berger] (fft)    {1965\\Cooley \& Tukey\\Algoritmo FFT};
+    \node[milestone, right=of fft]    (dipole) {1980s\\Ajuste de dipolos\\BESA};
+    \node[milestone, right=of dipole] (loreta) {1994\\Pascual-Marqui\\LORETA};
+    \node[milestone, below=0.6cm of loreta] (ica)    {1996\\Bell \& Sejnowski\\ICA para EEG};
+    \node[milestone, below=0.6cm of ica]  (conn) {2000s\\Conectividad\\PLV, PDC};
+    \node[milestone, left=of conn]  (hd)  {2010s\\HD-EEG\\sLORETA};
+    \node[milestone, left=of hd]    (dl)  {2018+\\Aprendizaje\\EEGNet, BENDR};
+    \node[milestone, left=of dl]    (fm)  {2023+\\LLMs\\LaBraM};
+    \draw[arr] (berger) -- (fft);
+    \draw[arr] (fft)    -- (dipole);
+    \draw[arr] (dipole) -- (loreta);
+    \draw[arr] (loreta) -- (ica);
+    \draw[arr] (ica)    -- (conn);
+    \draw[arr] (conn)   -- (hd);
+    \draw[arr] (hd)     -- (dl);
+    \draw[arr] (dl)     -- (fm);
+  \end{tikzpicture}
+  \end{center}
+  \vspace{0.2em}
+  \small Referencias: \cite{Berger1929,CooleyTukey1965,PascualMarqui1994,BellSejnowski1995,LeVanQuyen2001}
+\end{frame}

@@ -1,0 +1,33 @@
+% slides/10_microstates.tex
+
+\begin{frame}{EEG Microstates \& Nonlinear Complexity}
+  \begin{columns}[T]
+    \begin{column}{0.52\textwidth}
+      \textbf{EEG Microstates}
+      \begin{itemize}
+        \item Global scalp topography quasi-stable for $\sim$60--120 ms
+        \item Canonical 4--7 classes (A--G) via k-means / AAHC \cite{Michel2018}
+        \item Sequence statistics: duration, occurrence rate, transition matrix
+        \item Classes A--D map to dorsal attention, visual, somatomotor,
+          DMN networks \cite{Britz2010}
+        \item Altered in schizophrenia, depression, Alzheimer's disease
+      \end{itemize}
+    \end{column}
+    \begin{column}{0.45\textwidth}
+      \textbf{Nonlinear complexity measures}
+      \begin{itemize}
+        \item \textbf{SampEn}: regularity of temporal patterns;
+          reduced in coma \cite{Richman2000}
+        \item \textbf{Lempel--Ziv}: compressibility of binarised signal
+        \item \textbf{DFA}: long-range temporal correlations
+        \item \textbf{Lyapunov exponent}: phase-space divergence
+      \end{itemize}
+      \vspace{0.2em}
+      \begin{alertblock}{Brain criticality}
+        \small Healthy resting-state EEG sits near a critical point;
+        complexity shifts towards subcriticality in anaesthesia
+        and DOC \cite{Tagliazucchi2012}.
+      \end{alertblock}
+    \end{column}
+  \end{columns}
+\end{frame}
